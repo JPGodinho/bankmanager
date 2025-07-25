@@ -1,0 +1,14 @@
+{
+    "name": "jpgpa/bankmanager",
+    "description": "Sistema de matrícula simples",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "JPGodinho",
+            "email": "jpgpassiani@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^12.2"
+    }
+}
