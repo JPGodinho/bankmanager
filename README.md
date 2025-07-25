@@ -1,6 +1,6 @@
 # BankManager - Sistema de Gestão Acadêmica
 
-Este é um sistema de gestão acadêmica simples desenvolvido em PHP, seguindo o padrão arquitetural MVC (Model-View-Controller) e sem a utilização de frameworks, conforme os requisitos de um teste técnico.
+Este é um sistema de gestão acadêmica simples desenvolvido em PHP, seguindo o padrão arquitetural MVC (Model-View-Controller).
 
 ## 🚀 Funcionalidades
 
@@ -51,12 +51,11 @@ Siga os passos abaixo para configurar e executar a aplicação:
         }
         ```
     * **Executar Migrations (Criação das Tabelas):**
-        * **(PENDENTE - Próximo passo do Plus++):** Você precisará rodar o script de migrations para criar as tabelas `areas`, `alunos`, `cursos` e `matriculas`. Por enquanto, você pode criar as tabelas manualmente ou usar um cliente SQL (como PhpMyAdmin, DBeaver, MySQL Workbench) executando as queries de `CREATE TABLE` para:
+        *  Você precisará rodar o script de migrations para criar as tabelas `areas`, `alunos`, `cursos` e `matriculas`. Se preferir, você pode criar as tabelas manualmente ou usar um cliente SQL (como PhpMyAdmin, DBeaver, MySQL Workbench) executando as queries de `CREATE TABLE` para:
             * `areas` (id, titulo, descricao)
             * `alunos` (id, nome, email, data_nascimento)
             * `cursos` (id, titulo, descricao, area_id)
             * `matriculas` (id, aluno_id, curso_id, data_matricula)
-            * _Não esqueça das chaves estrangeiras (`FOREIGN KEY`) e da coluna `data_matricula` na tabela `matriculas` com `DEFAULT CURRENT_TIMESTAMP`._
 
 3.  **Instalar Dependências PHP:**
     ```bash
@@ -80,7 +79,7 @@ Siga os passos abaixo para configurar e executar a aplicação:
         *Substitua `/caminho/completo/para/seu/projeto/bankmanager/public` pelo caminho real onde você clonou o projeto.*
 
 5.  **Acessar a Aplicação:**
-    * Após configurar o servidor web, você poderá acessar a aplicação através do seu navegador, geralmente em: `http://localhost/bankmanager/public` ou `http://localhost`.
+    * Após configurar o servidor web, você poderá acessar a aplicação através do seu navegador, geralmente em: `http://localhost/bankmanager/public`.
 
 ## 🔒 Acesso ao Sistema
 
